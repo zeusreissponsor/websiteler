@@ -1,271 +1,103 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Güvenilir Siteler | Dbsbhs.com</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-<style>
-body {
-    background-color: #4b0082;
-    font-family: Arial, sans-serif;
-    color: #f6f6f6;
-    margin: 0;
-    padding: 0;
-}
-.page-wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1060px;
-    margin: 0 auto;
-    padding: 20px;
-}
-.banner-left, .banner-right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 160px;
-    height: 860px;
-    z-index: 1;
-}
-.banner-left img, .banner-right img {
-    width: 160px;
-    height: 860px;
-    object-fit: cover;
-}
-.banner-left {
-    left: 0;
-}
-.banner-right {
-    right: 0;
-}
-@media (max-width: 991px) {
-    .banner-left, .banner-right {
-        display: none;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sosyal Medya</title>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f4f4f4;
     }
-}
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding-top: 20px;
-}
-.row img {
-    width: 213px;
-    height: 213px;
-    object-fit: cover;
-}
-.kucuk .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.kucuk .col-md-3, .kucuk .col-4 {
-    display: flex;
-    justify-content: center;
-}
-@media (max-width: 767px) {
-    .kucuk .col-4 {
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
+
+    .sosyal-medya {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #fff;
     }
-    .row img {
-        width: 150px;
-        height: 150px;
+
+    .sosyal-medya h4 {
+      font-size: 24px;
+      margin-bottom: 30px;
+      color: #333;
     }
-}
-@media (min-width: 768px) {
-    .kucuk .col-md-3 {
-        flex: 0 0 20%;
-        max-width: 100%;
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
     }
-}
-.yazi-alani {
-    text-align: center;
-    color: #f6f6f6;
-    border-radius: 5px;
-    padding: 10px;
-}
-.kucuk h2 {
-    text-align: center;
-    color: white;
-}
-.sosyal-medya {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.sosyal-medya h4 {
-    color: white;
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-.sosyal-medya-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-.social-icon img {
-    width: 80px;
-    height: 80px;
-    transition: transform 0.3s;
-}
-@media (max-width: 767px) {
-    .social-icon img {
+
+    .social-icons a {
+      width: 60px;
+      height: 60px;
+      background-color: #ffffff;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 28px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.15);
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    .social-icons .instagram {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    }
+
+    .social-icons .telegram {
+      background-color: #0088cc;
+    }
+
+    .social-icons .youtube {
+      background-color: #FF0000;
+    }
+
+    .social-icons .kick {
+      background-color: #53fc18;
+      color: #000;
+    }
+
+    .social-icons .skype {
+      background-color: #00aff0;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 600px) {
+      .social-icons a {
         width: 50px;
         height: 50px;
+        font-size: 22px;
+      }
     }
-}
-.social-icon img:hover {
-    transform: scale(1.1);
-}
-.sosyal-medya-gorsel {
-    text-align: center;
-}
-.sosyal-medya-gorsel img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-.sosyal-medya-gorsel a {
-    display: inline-block;
-}
-.sosyal-medya-gorsel a img {
-    transition: opacity 0.3s ease;
-}
-.sosyal-medya-gorsel a:hover img {
-    opacity: 0.8;
-}
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: none;
-    z-index: 999;
-}
-.popup {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 20px;
-    background: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    max-width: 80%;
-    box-sizing: border-box;
-    border-radius: 5px;
-    display: none;
-}
-.popup img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 10px;
-}
-.popup-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    cursor: pointer;
-}
-.popup-close:hover {
-    color: #f00;
-}
-.popup h2 {
-    text-align: center;
-}
-</style>
+  </style>
 </head>
 <body>
 
-<div class="banner-left">
-    <img src="images/sol-banner.webp" alt="Sol Banner">
-</div>
-
-<div class="banner-right">
-    <img src="images/sag-banner.webp" alt="Sağ Banner">
-</div>
-
-<div class="page-wrapper">
-    <div class="container">
-        <!-- PLATINIUM SİTE -->
-        <div class="kucuk">
-            <h2>PLATINIUM SİTELER</h2>
-            <div class="row">
-                <!-- Her bir siteyi buraya ekle (örnek format aşağıda) -->
-                <div class="col-md-3 col-4 p-0">
-                    <a href="https://shortlian.online/grandgirisyenilink" target="_blank" data-gorsel-id="10" class="gorsel-link">
-                        <img src="uploads/67006b4021d70-4246.webp" alt="Görsel" class="img-fluid" loading="lazy">
-                    </a>
-                </div>
-                <!-- Diğer siteleri yukarıdaki formatta çoğalt -->
-            </div>
-        </div>
-
-        <!-- KAZANDIRAN SİTELER -->
-        <div class="kucuk">
-            <h2>KAZANDIRAN SİTELER</h2>
-            <div class="row">
-                <!-- Aynı şekilde diğer görseller ve linkler -->
-            </div>
-        </div>
-
-        <!-- SOSYAL MEDYA -->
-        <div class="sosyal-medya mt-5">
-            <h4>SOSYAL MEDYA HESAPLARIMIZ</h4>
-            <div class="sosyal-medya-icons">
-                <a href="#" target="_blank" class="social-icon"><img src="images/instagram.webp" alt="Instagram"></a>
-                <a href="https://t.me/mafcasino" target="_blank" class="social-icon"><img src="images/telegram.webp" alt="Telegram"></a>
-                <a href="#" target="_blank" class="social-icon"><img src="images/youtube.webp" alt="Youtube"></a>
-                <a href="#" target="_blank" class="social-icon"><img src="images/kick.webp" alt="Kick"></a>
-            </div>
-            <div class="sosyal-medya-gorsel mt-4">
-                <a href="https://join.skype.com/invite/khCaUeLGyN6I" target="_blank">
-                    <img src="images/skype.png" alt="Skype" loading="lazy">
-                </a>
-            </div>
-        </div>
+  <div class="sosyal-medya">
+    <h4>SOSYAL MEDYA HESAPLARIMIZ</h4>
+    <div class="social-icons">
+      <a href="#" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://t.me/mafcasino" class="telegram" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+      <a href="#" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="#" class="kick" target="_blank"><i class="fas fa-play-circle"></i></a>
+      <a href="https://join.skype.com/invite/khCaUeLGyN6I" class="skype" target="_blank"><i class="fab fa-skype"></i></a>
     </div>
-</div>
-
-<!-- Popup ve Overlay -->
-<div class="overlay" onclick="closePopup()"></div>
-<div class="popup">
-    <span class="popup-close" onclick="closePopup()">&times;</span>
-    <h2>Bonus Fırsatını Kaçırma!</h2>
-    <img src="images/bonus-popup.webp" alt="Bonus">
-</div>
-
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script>
-$(document).ready(function() {
-    $('.gorsel-link').on('click', function() {
-        var gorselId = $(this).data('gorsel-id');
-        $.post('gorsel_tiklama.php', { gorsel_id: gorselId });
-    });
-    setTimeout(function() {
-        document.querySelector('.overlay').style.display = 'block';
-        document.querySelector('.popup').style.display = 'block';
-    }, 1000);
-});
-function closePopup() {
-    document.querySelector('.overlay').style.display = 'none';
-    document.querySelector('.popup').style.display = 'none';
-}
-</script>
+  </div>
 
 </body>
 </html>
