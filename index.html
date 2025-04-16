@@ -5,32 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Güvenilir Siteler | Dbsbhs.com</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-image: url('IMG_20250416_134350_324.jpg');
-            background-size: cover; 
-            background-position: center; /* Görselin ortalanmasını sağlar */
-            background-repeat: repeat; /* Görselin tekrarını engeller */
-        }
+   body {
+    background-color: #4b0082; /* Koyu mor arka plan rengi */
+    font-family: Arial, sans-serif; /* Modern bir font ailesi */
+    color: #f6f6f6; /* Yazı rengi */
+    margin: 0;
+    padding: 0;
+}
 
-        @media (max-width: 767px) {
-            body {
-                background-image: url('images/mavi-bg.webp');
-                background-size: cover; 
-                background-position: center; /* Görselin ortalanmasını sağlar */
-                background-repeat: repeat; /* Görselin tekrarını engeller */
-            }
-        }
-/* Page wrapper tüm alanı sarmalar */
 .page-wrapper {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Container ile bannerlar arasındaki boşluk */
-    max-width: 1060px; /* Tüm içerik ve bannerlar için toplam genişlik */
+    gap: 20px;
+    max-width: 1060px;
     margin: 0 auto;
+    padding: 20px;
 }
 
-/* Sol ve Sağ banner için stil */
 .banner-left, .banner-right {
     display: flex;
     align-items: center;
@@ -43,63 +34,63 @@
     object-fit: cover;
 }
 
-
-
-/* Mobil cihazlarda bannerları gizleyebilirsiniz */
 @media (max-width: 991px) {
     .banner-left, .banner-right {
         display: none;
     }
 }
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding-top: 20px;
-        }
-.row img{
-width: 213px;
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.row img {
+    width: 213px;
     height: 213px;
     object-fit: cover;
 }
-        .kucuk .row {
-           display: flex;
-           flex-wrap: wrap;
-           justify-content: center; /* Satırdaki öğeleri yatayda ortalar */
-        }
 
-        .kucuk .col-md-3, .kucuk .col-4 {
-           display: flex;
-           justify-content: center; /* Her bir sütundaki görselleri ortalar */
+.kucuk .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-        }
+.kucuk .col-md-3, .kucuk .col-4 {
+    display: flex;
+    justify-content: center;
+}
 
-        @media (max-width: 767px) {
-            .kucuk .col-4 {
-                flex: 0 0 33.333333%;
-                max-width: 33.333333%;
-            }
-            .row img{
-width: 150px;
-    height: 150px;
-    object-fit: cover;
-}}
+@media (max-width: 767px) {
+    .kucuk .col-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .row img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+}
 
-        @media (min-width: 768px) {
-            .kucuk .col-md-3 {
-                flex: 0 0 20%;
-                max-width: 100%;
-            }
-        }
-        .yazi-alani {
-    text-align: center; /* Yazıyı ortalar */
+@media (min-width: 768px) {
+    .kucuk .col-md-3 {
+        flex: 0 0 20%;
+        max-width: 100%;
+    }
+}
 
+.yazi-alani {
+    text-align: center;
     color: #f6f6f6;
-    border-radius: 5px; /* Köşeleri yuvarlar */
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .sosyal-medya {
-    text-align: center; /* Başlığı ve simgeleri ortalar */
+    text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -113,61 +104,59 @@ width: 150px;
 .sosyal-medya-icons {
     display: flex;
     justify-content: center;
-    gap: 10px; /* İkonlar arasındaki boşluğu ayarlar */
+    gap: 10px;
     margin-bottom: 15px;
 }
 
 .social-icon img {
-    width: 80px; /* İkonların genişliğini ayarlar */
-    height: 80px; /* İkonların yüksekliğini ayarlar */
-    transition: transform 0.3s; /* Hover etkisi için geçiş süresi */
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s;
 }
 
 @media (max-width: 767px) {
-            .social-icon img {
-                 width: 50px; /* İkonların genişliğini ayarlar */
-    height: 50px; /* İkonların yüksekliğini ayarlar */
-            }
-        }
-.social-icon img:hover {
-    transform: scale(1.1); /* Hover efekti ile büyütür */
+    .social-icon img {
+        width: 50px;
+        height: 50px;
+    }
 }
 
-/* Overlay */
+.social-icon img:hover {
+    transform: scale(1.1);
+}
+
 .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Yarı saydam karartma */
-    display: none; /* Başlangıçta gizli */
-    z-index: 999; /* Popup'ın altına yerleştirilir */
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
 }
 
-/* Popup */
 .popup {
     position: fixed;
-    bottom: 20px; /* Sayfanın alt kısmında konumlandır */
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     padding: 20px;
     background: #fff;
     border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    z-index: 1000; /* En üstte yer alır */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
     max-width: 80%;
     box-sizing: border-box;
     border-radius: 5px;
-    display: none; /* Başlangıçta gizli */
-    overflow: hidden; /* İçerik taşmasını engelle */
+    display: none;
 }
 
 .popup img {
     max-width: 100%;
     height: auto;
-    display: block; /* Görselin üst üste binmesini önler */
-    margin-bottom: 10px; /* Görsel ve başlık arasına boşluk ekler */
+    display: block;
+    margin-bottom: 10px;
 }
 
 .popup-close {
@@ -178,49 +167,43 @@ width: 150px;
     font-weight: bold;
     color: #333;
     cursor: pointer;
-    z-index: 1001; /* Kapatma işareti popup'ın üstünde görünmesi için */
 }
 
 .popup-close:hover {
-    color: #f00; /* Hover efekti için renk değişimi */
+    color: #f00;
 }
 
-.popup h2{
+.popup h2 {
     text-align: center;
 }
-/* Görsel için stil ayarları */
+
 .sosyal-medya-gorsel {
-    text-align: center; /* Görseli ortala */
+    text-align: center;
 }
 
 .sosyal-medya-gorsel img {
-    max-width: 100%; /* Ekran boyutuna göre genişliği ayarla */
-    height: auto; /* Oranını koruyarak yüksekliği ayarla */
-    display: block; /* Görselin etrafında boşluk bırakma */
-    margin: 0 auto; /* Görseli ortala */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .sosyal-medya-gorsel a {
-    display: inline-block; /* Görselin bağlantının etrafında düzgün görünmesi için */
+    display: inline-block;
 }
 
 .sosyal-medya-gorsel a img {
-    transition: opacity 0.3s ease; /* Hover etkisi için geçiş efekti */
+    transition: opacity 0.3s ease;
 }
 
 .sosyal-medya-gorsel a:hover img {
-    opacity: 0.8; /* Hover üzerine gelince görseli biraz şeffaf yapar */
+    opacity: 0.8;
 }
 
-  .kucuk h2{
-      text-align:center;
-      color: white;
-  }
-  
-
-
-
-    </style>
+.kucuk h2 {
+    text-align: center;
+    color: white;
+}
 </head>
 <body>
     
