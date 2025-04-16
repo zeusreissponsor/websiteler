@@ -1,136 +1,535 @@
 <!DOCTYPE html>
-<html amp lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Casino Marketing</title>
-    <link rel="canonical" href="https://your-github-username.github.io/casino-marketing/">
-    <style amp-custom>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .promo-banner {
-            width: 100%;
-            height: 300px;
-            background: url('assets/banner.jpg') no-repeat center center;
-            background-size: cover;
-        }
-        .cta-button {
-            background-color: #ff6600;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            margin: 20px 0;
-        }
-        .content {
-            padding: 20px;
-        }
-        .sponsor-section {
-            background-color: #fff;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
-        }
-        .sponsor-title {
-            font-size: 1.5em;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .sponsor-list {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .sponsor {
-            text-align: center;
-            margin: 10px;
-            width: 30%;
-        }
-        .sponsor img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-img" src="https://cdn.ampproject.org/v0/amp-img-0.1.js"></script>
-</head>
-<body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./assets/img/favion.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 
-<header>
-    <h1>Welcome to Our Casino Marketing Page</h1>
-</header>
 
-<section class="promo-banner">
-    <!-- Add your promotional banner here -->
-</section>
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+        <title>Cadillac Casino</title>
+        <script async data-uid="59ab572401" src="https://marvelous-pioneer-6382.ck.page/59ab572401/index.js"></script>
+    </head>
+    <body>
 
-<div class="content">
-    <h2>Top Casino Promotions</h2>
-    <p>Discover the best bonuses and promotions available right now!</p>
-    <a href="#" class="cta-button">Claim Your Bonus Now</a>
-    
-    <h2>Featured Casino Games</h2>
-    <p>Explore top-rated casino games like Slots, Blackjack, and Roulette.</p>
-    <a href="#" class="cta-button">Play Now</a>
-    
-    <!-- Sponsor Sections -->
-    <div class="sponsor-section">
-        <h2 class="sponsor-title">Gold Sponsors</h2>
-        <div class="sponsor-list">
-            <div class="sponsor">
-                <amp-img src="assets/gold-sponsor1.png" width="200" height="100" alt="Gold Sponsor 1"></amp-img>
-                <p>Gold Sponsor 1 Description</p>
-            </div>
-            <div class="sponsor">
-                <amp-img src="assets/gold-sponsor2.png" width="200" height="100" alt="Gold Sponsor 2"></amp-img>
-                <p>Gold Sponsor 2 Description</p>
-            </div>
-            <!-- Add more gold sponsors as needed -->
-        </div>
-    </div>
 
-    <div class="sponsor-section">
-        <h2 class="sponsor-title">Platinum Sponsors</h2>
-        <div class="sponsor-list">
-            <div class="sponsor">
-                <amp-img src="assets/platinum-sponsor1.png" width="200" height="100" alt="Platinum Sponsor 1"></amp-img>
-                <p>Platinum Sponsor 1 Description</p>
-            </div>
-            <div class="sponsor">
-                <amp-img src="assets/platinum-sponsor2.png" width="200" height="100" alt="Platinum Sponsor 2"></amp-img>
-                <p>Platinum Sponsor 2 Description</p>
-            </div>
-            <!-- Add more platinum sponsors as needed -->
-        </div>
-    </div>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <i class="ri-steering-fill"></i>
+                    Cadillac Diamond
+                </a>
 
-    <div class="sponsor-section">
-        <h2 class="sponsor-title">Silver Sponsors</h2>
-        <div class="sponsor-list">
-            <div class="sponsor">
-                <amp-img src="assets/silver-sponsor1.png" width="200" height="100" alt="Silver Sponsor 1"></amp-img>
-                <p>Silver Sponsor 1 Description</p>
-            </div>
-            <div class="sponsor">
-                <amp-img src="assets/silver-sponsor2.png" width="200" height="100" alt="Silver Sponsor 2"></amp-img>
-                <p>Silver Sponsor 2 Description</p>
-            </div>
-            <!-- Add more silver sponsors as needed -->
-        </div>
-    </div>
-</div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#featured" class="nav__link">Featured</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#popular" class="nav__link">Popular</a>
+                        </li>
+                    </ul>
 
-</body>
-</html>
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-3-line"></i>
+                </div>
+            </nav>
+        </header>
+
+
+        <main class="main">
+
+            <section class="home section" id="home">
+
+                <div class="shape shape__big"></div>
+                <div class="shape shape__small"></div>
+
+                <div class="home__container container grid">
+
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Choose Your Game
+                        </h1>
+
+                        <h2 class="home__subtitle">
+                            Mission #
+                        </h2>
+
+                        <h3 class="home__elec">
+                            <i class="ri-flashlight-fill"></i>
+                            Grab It Now
+                        </h3>
+
+                    </div>
+
+
+
+ <img src="./assets/img/home.png" alt="" class="home__img">
+
+
+
+
+                    <div class="home__car">
+                        <div class="home__car-data">
+                            <div class="home__car-icon">
+                                <i class="ri-temp-cold-line"></i>
+                            </div>
+                            <h2 class="home__car-number">20+</h2>
+                            <h3 class="home__car-name">GAMES</h3>
+                        </div>
+                        <div class="home__car-data">
+                            <div class="home__car-icon">
+                                <i class="ri-dashboard-3-line"></i>
+                            </div>
+                            <h2 class="home__car-number">1000+</h2>
+                            <h3 class="home__car-name">PLAYERS</h3>
+                        </div>
+                        <div class="home__car-data">
+                            <div class="home__car-icon">
+                                <i class="ri-flashlight-fill"></i>
+                            </div>
+                            <h2 class="home__car-number">100%</h2>
+                            <h3 class="home__car-name">WINNING BONUS</h3>
+                        </div>
+                    </div>
+
+
+                    <a data-formkit-toggle="59ab572401" href="https://marvelous-pioneer-6382.ck.page/59ab572401" class="home__button">RATE</a>
+                </div>
+            </section>
+
+
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__group">
+                        <img src="./assets/img/about.png" alt="" class="about__img">
+
+                        <div class="about__card">
+                            <h3 class="about__card-title">RS 150000+</h3>
+                            <p class="about__card-description">
+                                People have won so far
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            Your Gaming Hub is Here
+                        </h2>
+
+                        <p class="about__description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, consequatur rerum nulla obcaecati ut earum voluptate sapiente iure ipsa voluptas?
+                        </p>
+
+                        <a href="#" class="button">Know More</a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="popular section" id="popular">
+
+                <div class="popular__container container swiper">
+                    <h2 class="section__title">
+                        Choose Your Game from The Famous Casino of Goa
+                    </h2>
+
+                    <div class="swiper-wrapper">
+
+
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">Games </h1>
+                            <h3 class="popular__subtitle">Teen Patti</h3>
+
+                            <img src="assets/img/popular1.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-dashboard-3-line"></i> Bonus+
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-funds-box-line"></i> 5+ variations
+                                </div>
+
+                            </div>
+
+
+
+                            <button class="button popular__button">
+
+                            </button>
+                        </article>
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">Games </h1>
+                            <h3 class="popular__subtitle">Teen Patti</h3>
+
+                            <img src="assets/img/popular1.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-dashboard-3-line"></i> Bonus+
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-funds-box-line"></i> 5+ variations
+                                </div>
+
+                            </div>
+
+
+
+                            <button class="button popular__button">
+
+                            </button>
+                        </article>
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">Games </h1>
+                            <h3 class="popular__subtitle">Teen Patti</h3>
+
+                            <img src="assets/img/popular1.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-dashboard-3-line"></i> Bonus+
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-funds-box-line"></i> 5+ variations
+                                </div>
+
+                            </div>
+
+
+
+                            <button class="button popular__button">
+
+                            </button>
+                        </article>
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">Games </h1>
+                            <h3 class="popular__subtitle">Teen Patti</h3>
+
+                            <img src="assets/img/popular1.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-dashboard-3-line"></i> Bonus+
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-funds-box-line"></i> 5+ variations
+                                </div>
+
+                            </div>
+
+
+
+                            <button class="button popular__button">
+
+                            </button>
+                        </article>
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">Games </h1>
+                            <h3 class="popular__subtitle">Teen Patti</h3>
+
+                            <img src="assets/img/popular1.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-dashboard-3-line"></i> Bonus+
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-funds-box-line"></i> 5+ variations
+                                </div>
+
+                            </div>
+
+
+
+                            <button class="button popular__button">
+
+                            </button>
+                        </article>
+
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+
+            <section class="features section">
+                <h2 class="section__title">More Features</h2>
+
+                <div class="features__container container grid">
+                    <div class="features__group">
+                        <img src="./assets/img/home.png" alt="" class="features__img">
+
+                        <div class="features__card features__card-1">
+                            <h3 class="features__card-title">test</h3>
+                            <p class="features__card-description">test <br> test</p>
+                        </div>
+
+                        <div class="features__card features__card-2">
+                            <h3 class="features__card-title">test</h3>
+                            <p class="features__card-description">test <br> test</p>
+                        </div>
+
+                        <div class="features__card features__card-3">
+                            <h3 class="features__card-title">test</h3>
+                            <p class="features__card-description">test <br> test</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="./assets/img/map.svg" class="features__map">
+            </section>
+
+
+            <section class="featured section" id="featured">
+                <h2 class="section__title">Featured Games</h2>
+            </section>
+            <div class="featured__container container">
+                <ul class="featured__filters">
+                    <li>
+                        <button class="featured__item active-featured" data-filter="all">
+                            <span>All</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".tesla">
+                            <img src="/assets/img/" alt="">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".audi">
+                            <img src="/assets/img/.png" alt="">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".porsche">
+                            <img src="/assets/img/.png" alt="">
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="featured__container container grid">
+
+                    <article class="featured__card mix tesla">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Teen Patti</h1>
+
+                        <h3 class="featured__subtitle">Play Now</h3>
+
+                        <img src="assets/img/popular1.png" alt="" class="featured__img">
+
+
+                        <button class="button featured__button">
+
+                        </button>
+                    </article>
+                    <article class="featured__card mix tesla">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Teen Patti</h1>
+
+                        <h3 class="featured__subtitle">Play Now</h3>
+
+                        <img src="assets/img/popular1.png" alt="" class="featured__img">
+
+
+
+                        <button class="button featured__button">
+                        </button>
+                    </article>
+                    <article class="featured__card mix tesla">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Teen Patti</h1>
+
+                        <h3 class="featured__subtitle">Play Now</h3>
+
+                        <img src="assets/img/popular1.png" alt="" class="featured__img">
+
+
+                        <button class="button featured__button">
+
+                        </button>
+                    </article>
+                    <article class="featured__card mix tesla">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Teen Patti</h1>
+
+                        <h3 class="featured__subtitle">Play Now</h3>
+
+                        <img src="assets/img/popular1.png" alt="" class="featured__img">
+
+
+                        <button class="button featured__button">
+
+                        </button>
+                    </article>
+                    <article class="featured__card mix tesla">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Teen Patti</h1>
+
+                        <h3 class="featured__subtitle">Play Now</h3>
+
+                        <img src="assets/img/popular1.png" alt="" class="featured__img">
+
+
+                        <button class="button featured__button">
+
+                        </button>
+                    </article>
+
+            <section class="offer section">
+                <div class="offer_container container grid">
+                    <img src="./assets/img/offer-bg.png" alt="" class="offer__bg" />
+
+                    <div class="offer__data">
+                        <h2 class="section__title offer__title">
+                            Receive Special Offers <br> Right Here
+                        </h2>
+
+                        <p class="offer__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates consequatur mollitia maiores dolorem voluptatem cum recusandae?
+
+                        </p>
+
+                        <a href="#" class="button">
+                            Subscribe Now
+                        </a>
+                    </div>
+                    <img src="./assets/img/home.png" alt="" class="offer__img" />
+                </div>
+            </section>
+
+
+                <div class="logos__container container grid">
+                    <div class="logos__content">
+                        <img src="/assets/img/logo1.png" alt="" class="logos__img">
+                    </div>
+                    <div class="logos__content">
+                        <img src="/assets/img/logo2.png" alt="" class="logos__img">
+                    </div>
+                    <div class="logos__content">
+                        <img src="/assets/img/logo3.png" alt="" class="logos__img">
+                    </div>
+                    <div class="logos__content">
+                        <img src="/assets/img/logo4.png" alt="" class="logos__img">
+                    </div>
+                    <div class="logos__content">
+                        <img src="/assets/img/logo5.png" alt="" class="logos__img">
+                    </div>
+                    <div class="logos__content">
+                        <img src="/assets/img/logo6.png" alt="" class="logos__img">
+                    </div>
+                </div>
+            </section> -->
+        </main>
+
+        <footer class="footer section">
+            <div class="shape shape__big"></div>
+            <div class="shape shape__small"></div>
+
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-steering-line"></i> Cadillac Diamon
+                    </a>
+                    <p class="footer__description">
+                        We offer the best electric cars <br> the most recognized brands in <br> the world.
+                    </p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Company
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">About us</a></li>
+                        <li><a href="#" class="footer__link">Products</a></li>
+                        <li><a href="#" class="footer__link">History</a></li>
+                        <li><a href="#" class="footer__link">Features</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Information
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Request a quote</a></li>
+                        <li><a href="#" class="footer__link">Find a dealer</a></li>
+                        <li><a href="#" class="footer__link">Contact us</a></li>
+                        <li><a href="#" class="footer__link">Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Follow us
+                    </h3>
+
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com" target="_blank" class="footer__social-link"><i class="ri-facebook-fill"></i></a>
+                        <a href="https://www.instagram.com" target="_blank" class="footer__social-link"><i class="ri-instagram-line"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="footer__social-link"><i class="ri-twitter-line"></i></a>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="footer__copy">&#169; Afshan Khan. All rights reserved</span>
+        </footer>
+
+
+
+        <a href="#" id="scrollup" class="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+
+        <script src="./assets/js/scrollreveal.min.js"></script>
+
+
+        <script src="./assets/js/swiper-bundle.min.js"></script>
+
+
+        <script src="./assets/js/mixitup.min.js"></script>
+
+
+        <script src="./assets/js/main.js"></script>
+        <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+
+    </body>
+                            </html>
