@@ -40,6 +40,7 @@
       padding: 15px;
       animation: fadeInUp 0.7s ease;
       cursor: pointer;
+      flex: 1 1 48%; /* Her kartın esnek bir şekilde yan yana olabilmesi için flex özelliği */
     }
 
     .bonus-box h2 {
@@ -170,6 +171,27 @@
     @keyframes zoomIn {
       from {transform: scale(0.9); opacity: 0;}
       to {transform: scale(1); opacity: 1;}
+    }
+
+    /* Mobilde kartların yan yana görünmesi için medya sorgusu */
+    @media (max-width: 768px) {
+      .bonus-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .bonus-box {
+        flex: 1 1 48%; /* 2 kartı yan yana yerleştir */
+        margin-bottom: 20px;
+      }
+    }
+
+    /* Daha küçük ekranlar için tekli kart görünümü */
+    @media (max-width: 480px) {
+      .bonus-box {
+        flex: 1 1 100%; /* Tek tek sıralanacak şekilde */
+      }
     }
   </style>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
