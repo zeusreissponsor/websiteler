@@ -32,24 +32,26 @@
       padding: 20px;
     }
 
-    .bonus-card {
+    .bonus-box {
       background: #2e003e;
       border: 1px solid #6a1b9a;
       border-radius: 10px;
       margin-bottom: 20px;
       padding: 15px;
       animation: fadeInUp 0.7s ease;
+      cursor: pointer;
     }
 
-    .bonus-card h2 {
+    .bonus-box h2 {
       margin: 0 0 10px;
-      font-size: 22px;
+      font-size: 20px;
       color: #ffeb3b;
     }
 
-    .bonus-card p {
-      margin: 0 0 12px;
-      font-size: 15px;
+    .bonus-box p {
+      margin: 0;
+      font-size: 14px;
+      color: #ccc;
     }
 
     .btn {
@@ -117,6 +119,36 @@
       font-weight: bold;
     }
 
+    amp-lightbox {
+      background: rgba(0, 0, 0, 0.85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-content {
+      background: #2e003e;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 90%;
+      text-align: left;
+    }
+
+    .modal-content h3 {
+      margin-top: 0;
+      color: #ffeb3b;
+    }
+
+    .close-btn {
+      background: #6a1b9a;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      margin-top: 15px;
+      display: inline-block;
+      text-decoration: none;
+    }
+
     footer {
       text-align: center;
       font-size: 14px;
@@ -149,29 +181,49 @@
 </header>
 
 <section class="bonus-list">
-  <div class="bonus-card">
+  <div class="bonus-box" on="tap:bonus1">
     <h2>%100 Hoşgeldin Bonusu</h2>
-    <p>Yeni üyeler için 3000₺'ye kadar hoşgeldin bonusu seni bekliyor!</p>
-    <a class="btn" href="https://site1.com" target="_blank">Bonusu Al</a>
+    <p>Detayları görmek için tıklayın</p>
   </div>
 
-  <div class="bonus-card">
+  <div class="bonus-box" on="tap:bonus2">
     <h2>Her Gün Free Spin</h2>
-    <p>Giriş yap, her gün 25 bedava dönüş kazan!</p>
-    <a class="btn" href="https://site2.com" target="_blank">Hemen Katıl</a>
+    <p>Detayları görmek için tıklayın</p>
   </div>
 
-  <div class="bonus-card">
-    <h2>Yatırım Bonusu %30</h2>
-    <p>Yatırımlarına ekstra %30 bonus seni bekliyor!</p>
-    <a class="btn" href="https://site3.com" target="_blank">Detaylar</a>
+  <div class="bonus-box" on="tap:bonus3">
+    <h2>%30 Yatırım Bonusu</h2>
+    <p>Detayları görmek için tıklayın</p>
   </div>
 </section>
+
+<amp-lightbox id="bonus1" layout="nodisplay">
+  <div class="modal-content">
+    <h3>%100 Hoşgeldin Bonusu</h3>
+    <p>Yeni üyelere özel 3000₺'ye kadar %100 hoşgeldin bonusu. İlk yatırımınızı yaptıktan sonra hesabınıza otomatik tanımlanır.</p>
+    <a class="close-btn" on="tap:bonus1.close">Kapat</a>
+  </div>
+</amp-lightbox>
+
+<amp-lightbox id="bonus2" layout="nodisplay">
+  <div class="modal-content">
+    <h3>Her Gün Free Spin</h3>
+    <p>Giriş yap ve her gün 25 ücretsiz dönüş kazan! Tek yapman gereken günlük giriş yapmak.</p>
+    <a class="close-btn" on="tap:bonus2.close">Kapat</a>
+  </div>
+</amp-lightbox>
+
+<amp-lightbox id="bonus3" layout="nodisplay">
+  <div class="modal-content">
+    <h3>%30 Yatırım Bonusu</h3>
+    <p>Yatırımlarınıza %30 ekstra bonus kazanın. Bonusu almak için canlı desteğe başvurabilirsiniz.</p>
+    <a class="close-btn" on="tap:bonus3.close">Kapat</a>
+  </div>
+</amp-lightbox>
 
 <section class="mini-ads">
   <h2>Popüler Teklifler</h2>
   <div class="ads-wrapper">
-
     <div class="ad-box">
       <amp-img src="https://example.com/logo1.png" width="100" height="60" layout="fixed" alt="BetMax"></amp-img>
       <h3>BetMax</h3>
@@ -185,21 +237,6 @@
       <p>Her gün bedava spin ve özel turnuvalar!</p>
       <a class="btn-small" href="https://slotify.com" target="_blank">Ziyaret Et</a>
     </div>
-
-    <div class="ad-box">
-      <amp-img src="https://example.com/logo3.png" width="100" height="60" layout="fixed" alt="CasinoStar"></amp-img>
-      <h3>CasinoStar</h3>
-      <p>%50 yatırım bonusu ve VIP avantajlar.</p>
-      <a class="btn-small" href="https://casinostar.com" target="_blank">Ziyaret Et</a>
-    </div>
-
-    <div class="ad-box">
-      <amp-img src="https://example.com/logo4.png" width="100" height="60" layout="fixed" alt="LotoKing"></amp-img>
-      <h3>LotoKing</h3>
-      <p>Yeni üyelere özel 100₺ deneme bonusu!</p>
-      <a class="btn-small" href="https://lotoking.com" target="_blank">Ziyaret Et</a>
-    </div>
-
   </div>
 </section>
 
