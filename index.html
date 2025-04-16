@@ -2,59 +2,128 @@
 <html ⚡>
 <head>
   <meta charset="utf-8">
-  <title>Casino Bonusları - Güncel Promosyonlar</title>
+  <title>Casino Bonusları - Promosyonlar</title>
   <link rel="canonical" href="self.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <meta name="description" content="En güncel casino bonuslarını ve promosyon kodlarını bu sayfadan takip edin.">
+  <meta name="description" content="En güncel casino bonuslarını ve promosyon kodlarını bu sayfadan keşfedin.">
   <style amp-custom>
     body {
-      font-family: Arial, sans-serif;
-      background: #101010;
+      font-family: 'Arial', sans-serif;
+      background: #1a0029;
       color: #fff;
       margin: 0;
       padding: 0;
     }
+
     header {
-      background: #c62828;
-      padding: 20px;
+      background: #4a148c;
+      padding: 25px 10px;
       text-align: center;
+      animation: fadeInDown 1s ease;
     }
+
     header h1 {
       margin: 0;
-      font-size: 26px;
+      font-size: 28px;
+      color: #fff176;
     }
-    .bonus-list {
+
+    .bonus-list, .mini-ads {
       padding: 20px;
     }
+
     .bonus-card {
-      background: #1e1e1e;
-      border: 1px solid #333;
-      border-radius: 8px;
+      background: #2e003e;
+      border: 1px solid #6a1b9a;
+      border-radius: 10px;
       margin-bottom: 20px;
       padding: 15px;
+      animation: fadeInUp 0.7s ease;
     }
+
     .bonus-card h2 {
       margin: 0 0 10px;
-      font-size: 20px;
-      color: #fdd835;
+      font-size: 22px;
+      color: #ffeb3b;
     }
+
     .bonus-card p {
-      margin: 0 0 10px;
+      margin: 0 0 12px;
+      font-size: 15px;
     }
+
     .btn {
-      background: #43a047;
-      color: #fff;
-      padding: 10px 15px;
+      background: #00c853;
+      color: white;
+      padding: 10px 16px;
       border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .mini-ads h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #ce93d8;
+    }
+
+    .ads-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .ad-box {
+      background: #311b92;
+      border: 1px solid #7e57c2;
+      border-radius: 8px;
+      padding: 12px;
+      width: 48%;
+      box-sizing: border-box;
+      text-align: center;
+      animation: zoomIn 0.6s ease;
+    }
+
+    .ad-box h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      color: #fbc02d;
+    }
+
+    .btn-small {
+      background: #00acc1;
+      color: #fff;
+      padding: 6px 10px;
+      font-size: 13px;
+      border-radius: 4px;
       text-decoration: none;
       display: inline-block;
     }
+
     footer {
       text-align: center;
       font-size: 14px;
       padding: 20px;
-      background: #111;
+      background: #12002e;
       color: #aaa;
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes zoomIn {
+      from {transform: scale(0.9); opacity: 0;}
+      to {transform: scale(1); opacity: 1;}
     }
   </style>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -68,23 +137,50 @@
 <section class="bonus-list">
 
   <div class="bonus-card">
-    <h2>100% İlk Üyelik Bonusu</h2>
-    <p>Yeni üyelere özel 1000₺'ye kadar bonus fırsatı!</p>
-    <a class="btn" href="https://siteadresi.com" target="_blank">Bonusu Al</a>
+    <h2>%100 Hoşgeldin Bonusu</h2>
+    <p>Yeni kullanıcılar için 3000₺'ye kadar hoşgeldin bonusu!</p>
+    <a class="btn" href="https://site1.com" target="_blank">Bonusu Al</a>
   </div>
 
   <div class="bonus-card">
-    <h2>Free Spin Kampanyası</h2>
-    <p>Her gün 50 bedava dönüş kazan!</p>
-    <a class="btn" href="https://siteadresi.com" target="_blank">Hemen Katıl</a>
+    <h2>Her Gün Free Spin</h2>
+    <p>Giriş yap, her gün 25 bedava dönüş kazan!</p>
+    <a class="btn" href="https://site2.com" target="_blank">Hemen Katıl</a>
   </div>
 
   <div class="bonus-card">
     <h2>Yatırım Bonusu %30</h2>
-    <p>Her yatırımınıza ekstra %30 bonus!</p>
-    <a class="btn" href="https://siteadresi.com" target="_blank">Detaylar</a>
+    <p>Yatırımlarına ekstra %30 bonus seni bekliyor!</p>
+    <a class="btn" href="https://site3.com" target="_blank">Detaylar</a>
   </div>
 
+</section>
+
+<section class="mini-ads">
+  <h2>Popüler Teklifler</h2>
+  <div class="ads-wrapper">
+
+    <div class="ad-box">
+      <h3>500₺ Kayıp Bonusu</h3>
+      <a class="btn-small" href="https://site4.com" target="_blank">Al</a>
+    </div>
+
+    <div class="ad-box">
+      <h3>250 Freespin</h3>
+      <a class="btn-small" href="https://site5.com" target="_blank">Detay</a>
+    </div>
+
+    <div class="ad-box">
+      <h3>%50 Yatırım Bonusu</h3>
+      <a class="btn-small" href="https://site6.com" target="_blank">Katıl</a>
+    </div>
+
+    <div class="ad-box">
+      <h3>Yeni Slot Oyunu</h3>
+      <a class="btn-small" href="https://site7.com" target="_blank">İncele</a>
+    </div>
+
+  </div>
 </section>
 
 <footer>
