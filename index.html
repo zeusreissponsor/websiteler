@@ -2,24 +2,44 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sosyal Medya</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sosyal Medya ve Reklamlar</title>
 
-  <!-- Font Awesome CDN -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: "Segoe UI", sans-serif;
       background-color: #f4f4f4;
     }
 
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .reklam {
+      width: 100%;
+      height: 90px;
+      background-color: #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      border: 2px dashed #bbb;
+      color: #666;
+      font-size: 18px;
+    }
+
     .sosyal-medya {
-      text-align: center;
-      padding: 40px 20px;
       background-color: #fff;
+      padding: 40px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
     }
 
     .sosyal-medya h4 {
@@ -31,14 +51,14 @@
     .social-icons {
       display: flex;
       justify-content: center;
-      gap: 20px;
       flex-wrap: wrap;
+      gap: 20px;
     }
 
     .social-icons a {
       width: 60px;
       height: 60px;
-      background-color: #ffffff;
+      background-color: #fff;
       color: #fff;
       border-radius: 50%;
       display: flex;
@@ -76,27 +96,60 @@
       background-color: #00aff0;
     }
 
-    /* Responsive */
+    .alt-reklam {
+      margin-top: 30px;
+      width: 100%;
+      height: 250px;
+      background-color: #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px dashed #bbb;
+      color: #666;
+      font-size: 18px;
+    }
+
     @media screen and (max-width: 600px) {
       .social-icons a {
         width: 50px;
         height: 50px;
         font-size: 22px;
       }
+
+      .reklam {
+        height: 60px;
+        font-size: 14px;
+      }
+
+      .alt-reklam {
+        height: 150px;
+        font-size: 14px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="sosyal-medya">
-    <h4>SOSYAL MEDYA HESAPLARIMIZ</h4>
-    <div class="social-icons">
-      <a href="#" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://t.me/mafcasino" class="telegram" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-      <a href="#" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
-      <a href="#" class="kick" target="_blank"><i class="fas fa-play-circle"></i></a>
-      <a href="https://join.skype.com/invite/khCaUeLGyN6I" class="skype" target="_blank"><i class="fab fa-skype"></i></a>
+  <div class="container">
+
+    <!-- ÜST REKLAM ALANI -->
+    <div class="reklam">728x90 Reklam Alanı (Üst)</div>
+
+    <!-- SOSYAL MEDYA ALANI -->
+    <div class="sosyal-medya">
+      <h4>SOSYAL MEDYA HESAPLARIMIZ</h4>
+      <div class="social-icons">
+        <a href="#" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://t.me/mafcasino" class="telegram" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+        <a href="#" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="kick" target="_blank"><i class="fas fa-play-circle"></i></a>
+        <a href="https://join.skype.com/invite/khCaUeLGyN6I" class="skype" target="_blank"><i class="fab fa-skype"></i></a>
+      </div>
     </div>
+
+    <!-- ALT REKLAM ALANI -->
+    <div class="alt-reklam">300x250 Reklam Alanı (Alt)</div>
+
   </div>
 
 </body>
