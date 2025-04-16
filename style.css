@@ -1,1 +1,172 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(to bottom,#363636, #5a2e2f,#bd151a);
+  position: relative;
+  height: 100vh;
+}
+nav img{
+  width: 150px;
+  margin: 3rem 0 0 10rem;
+  animation-delay: 0.5s;
+}
+main img{
+  width: 600px;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+}
+.content{
+  padding-left: 500px;
+}
+h1{
+  font-style: italic;
+  transform: rotate(345deg);
+  transform-origin: left;
+  font-size: 6rem;
+  color: white;
+  width: fit-content;
+}
+p{
+  font-style: italic;
+  transform: rotate(345deg);
+  transform-origin: left;
+  font-size: 5rem;
+  background-color: yellow;
+  width: fit-content;
+  margin: 1rem 0;
+}
+span{
+  display: block;
+  font-style: italic;
+  transform: rotate(345deg);
+  transform-origin: left;
+  font-size: 4rem;
+  color: white;
+  width: fit-content;
+}
+.price-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #bd151a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
+.btn{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+button{
+  padding: 15px;
+  width: 10rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #ee0b13;
+  color: white;
+  cursor: pointer;
+}
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes feImage {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    100% {
+        opacity: 1;
+
+    }
+}
+.feImage{
+  opacity: 0;
+  animation: feImage 1.5s forwards;
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+header {
+    animation-delay: 0.8s;
+}
+.container > div> h1 {
+    animation-delay: 1s;
+}
+.container > div> p {
+    animation-delay: 1.2s;
+}
+.container div:first-child span {
+    animation-delay: 1.5s;
+}
+.container div:last-child {
+    animation-delay: 2s;
+}
+.btn {
+    animation-delay: 2.5s;
+}
+@media (max-width: 767px) {
+  body{
+    height: 150vh;
+  }
+  nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav img{
+    width: 150px;
+    margin: 1rem 0rem 0 12rem;
+  }
+  main img{
+    width: 450px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+  }
+  .content{
+    padding-left: 30px;
+  }
+  h1{
+    transform: rotate(0deg);
+    font-size: 4rem;
+  }
+  p{
+  transform: rotate(0deg);
+  font-size: 3rem;
+  margin: 3rem 0;
+  }
+  span{
+    transform: rotate(0deg);
+    font-size: 3rem;
+  } 
+  button{
+    padding: 15px;
+    margin-left: 10rem;
+    width: 10rem;
+  }
+  .price-circle {
+    top: 30%;
+    left: 45%;
+}
+}
