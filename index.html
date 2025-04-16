@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sosyal Medya ve Reklamlar</title>
+  <title>Sosyal Medya ve Reklam Alanları</title>
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -16,22 +16,28 @@
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 20px;
     }
 
-    .reklam {
-      width: 100%;
-      height: 90px;
+    /* REKLAM ALANI */
+    .reklam-alani {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .reklam-kutu {
       background-color: #ddd;
+      height: 100px;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 30px;
       border: 2px dashed #bbb;
-      color: #666;
-      font-size: 18px;
+      font-size: 16px;
+      color: #555;
     }
 
     .sosyal-medya {
@@ -40,6 +46,7 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       text-align: center;
+      margin-bottom: 40px;
     }
 
     .sosyal-medya h4 {
@@ -75,38 +82,25 @@
       box-shadow: 0 0 15px rgba(0,0,0,0.3);
     }
 
-    .social-icons .instagram {
+    .instagram {
       background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     }
 
-    .social-icons .telegram {
+    .telegram {
       background-color: #0088cc;
     }
 
-    .social-icons .youtube {
+    .youtube {
       background-color: #FF0000;
     }
 
-    .social-icons .kick {
+    .kick {
       background-color: #53fc18;
       color: #000;
     }
 
-    .social-icons .skype {
+    .skype {
       background-color: #00aff0;
-    }
-
-    .alt-reklam {
-      margin-top: 30px;
-      width: 100%;
-      height: 250px;
-      background-color: #ddd;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: 2px dashed #bbb;
-      color: #666;
-      font-size: 18px;
     }
 
     @media screen and (max-width: 600px) {
@@ -116,13 +110,8 @@
         font-size: 22px;
       }
 
-      .reklam {
-        height: 60px;
-        font-size: 14px;
-      }
-
-      .alt-reklam {
-        height: 150px;
+      .reklam-kutu {
+        height: 80px;
         font-size: 14px;
       }
     }
@@ -132,10 +121,14 @@
 
   <div class="container">
 
-    <!-- ÜST REKLAM ALANI -->
-    <div class="reklam">728x90 Reklam Alanı (Üst)</div>
+    <!-- ÜST REKLAM KUTULARI -->
+    <div class="reklam-alani">
+      <div class="reklam-kutu">Reklam 1</div>
+      <div class="reklam-kutu">Reklam 2</div>
+      <div class="reklam-kutu">Reklam 3</div>
+    </div>
 
-    <!-- SOSYAL MEDYA ALANI -->
+    <!-- SOSYAL MEDYA -->
     <div class="sosyal-medya">
       <h4>SOSYAL MEDYA HESAPLARIMIZ</h4>
       <div class="social-icons">
@@ -147,8 +140,12 @@
       </div>
     </div>
 
-    <!-- ALT REKLAM ALANI -->
-    <div class="alt-reklam">300x250 Reklam Alanı (Alt)</div>
+    <!-- ALT REKLAM KUTULARI -->
+    <div class="reklam-alani">
+      <div class="reklam-kutu">Reklam 4</div>
+      <div class="reklam-kutu">Reklam 5</div>
+      <div class="reklam-kutu">Reklam 6</div>
+    </div>
 
   </div>
 
