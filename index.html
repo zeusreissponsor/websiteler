@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML5 Banner Ads</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="Images/shoes.jpeg" type="image/x-icon">
-  </head>
-  <body>
-    <header class="fade-in">
-      <nav>
-        <img src="Images/logo.png" alt="logo">
-      </nav>
-    </header>
-    <main>
-      <div class="container">
-        <div class="content">
-          <h1 class="fade-in">New Collection</h1>
-          <p class="fade-in">FASHION</p>
-          <span class="fade-in">SALE</span>
-        </div>
-        <div>
-          <img class="feImage" src="Images/shoes.png" alt="shoes">
-          <div class="price-circle feImage">
-          $49.99
-          </div>
-        </div>
-      </div>
-      <div class="btn fade-in">
-        <button>Order Now</button>
-      </div>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Banner Ads</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+<body>
+  <header>
+    <h1>HTML5 Banner Ads</h1>
+    <p>Created with Google Web Designer</p>
+    <img src="GWD Logo.png" alt="Google Web Designer Logo" width="300px">
+  </header>
+
+  <main>
+    <p class="intro">
+      I designed these HTML5 banners using Google Web Designer, but unfortunately, my portfolio platform wouldn't allow embedding them directly. So, I decided to give GitHub Pages a try! This is also my first project using it. <br>
+      <b>Please note:</b> For the best viewing experience, it's recommended to view these banners on a PC or by rotating your phone to landscape mode.
+      <br><i>- HMT</i>
+    </p>
+
+    <section class="banner-container">
+      <h2 id="header2">Simple Animated Horizontal Banner</h2>
+      <iframe class="banner" src="banner1/banner1.html" frameborder="0" scrolling="no" id="banner1"></iframe>
+      <p>A little bit of animation and a button that changes color when hovered.</p>
+      <hr class="separator">
+      <h2>Swipeable Gallery Banner</h2>
+      <iframe class="banner" src="banner2/banner2.html" frameborder="0" scrolling="no" id="banner2"></iframe>
+      <p>Swipe on the photo or click on the navigation buttons to view the photos.</p>
+      <hr class="separator">
+      <h2>360&deg; Rotatable Banner</h2>
+      <iframe class="banner" src="banner3/banner3.html" frameborder="0" scrolling="no" id="banner2"></iframe>
+      <p>Swipe or Drag to Experience the Full 360&deg; View</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Thank you for viewing! <br> <a href="#">Go to my portfolio</a></p>
+  </footer>
+</body>
 </html>
