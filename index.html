@@ -5,8 +5,6 @@
     <title>Casino Sponsorları</title>
     <link rel="canonical" href="self.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-
-    <!-- AMP -->
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 
     <!-- Google Font -->
@@ -45,15 +43,15 @@
 
       header h1 {
         margin: 0;
-        font-size: 28px;
+        font-size: 32px;
         font-weight: 700;
         letter-spacing: 1px;
       }
 
       .content {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 15px;
         padding: 20px;
       }
 
@@ -66,29 +64,15 @@
 
       .card amp-img {
         border-radius: 8px;
-        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
       }
 
       .card p {
         margin-top: 10px;
-        font-size: 13px;
+        font-size: 14px;
         color: #fff;
-      }
-
-      @media (max-width: 768px) {
-        .content {
-          grid-template-columns: repeat(3, 1fr);
-        }
-
-        .card p {
-          font-size: 12px;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .content {
-          grid-template-columns: repeat(2, 1fr);
-        }
       }
 
       footer .social-icons {
@@ -110,40 +94,38 @@
       <h1>Casino Sponsorları</h1>
     </header>
 
-    <!-- Sponsor kartları -->
     <div class="content">
       <div class="card">
-        <amp-img src="images/sponsor/logo isimsiz.png" width="300" height="150" layout="responsive" alt="SlotKing"></amp-img>
+        <amp-img src="images/sponsor/logo isimsiz.png" width="300" height="150" layout="intrinsic" alt="SlotKing"></amp-img>
         <p>SlotKing - Yüksek Oranlı Bonuslar</p>
       </div>
       <div class="card">
-        <amp-img src="images/sponsor2.png" width="300" height="150" layout="responsive" alt="Sponsor B"></amp-img>
+        <amp-img src="images/sponsor2.png" width="300" height="150" layout="intrinsic" alt="Sponsor B"></amp-img>
         <p>Sponsor B - %50 Çevrimsiz Bonus</p>
       </div>
       <div class="card">
-        <amp-img src="images/sponsor3.png" width="300" height="150" layout="responsive" alt="Sponsor C"></amp-img>
+        <amp-img src="images/sponsor3.png" width="300" height="150" layout="intrinsic" alt="Sponsor C"></amp-img>
         <p>Sponsor C - Ücretsiz Deneme</p>
       </div>
       <div class="card">
-        <amp-img src="images/sponsor4.png" width="300" height="150" layout="responsive" alt="Sponsor D"></amp-img>
+        <amp-img src="images/sponsor4.png" width="300" height="150" layout="intrinsic" alt="Sponsor D"></amp-img>
         <p>Sponsor D - Para İadesi</p>
       </div>
     </div>
 
-    <!-- Footer ve sosyal ikonlar -->
     <footer>
       <div class="social-icons">
         <a href="https://t.me/senin-kanalin" target="_blank">
-          <amp-img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="32" height="32" alt="Telegram" layout="fixed"></amp-img>
+          <amp-img src="images/icons/telegram.png" width="32" height="32" alt="Telegram" layout="fixed"></amp-img>
         </a>
         <a href="https://twitter.com/seninhesabin" target="_blank">
-          <amp-img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="32" height="32" alt="Twitter" layout="fixed"></amp-img>
+          <amp-img src="images/icons/twitter.png" width="32" height="32" alt="Twitter" layout="fixed"></amp-img>
         </a>
         <a href="https://youtube.com/seninkanalin" target="_blank">
-          <amp-img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="32" height="32" alt="YouTube" layout="fixed"></amp-img>
+          <amp-img src="images/icons/youtube.png" width="32" height="32" alt="YouTube" layout="fixed"></amp-img>
         </a>
         <a href="https://instagram.com/seninhesabin" target="_blank">
-          <amp-img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="32" height="32" alt="Instagram" layout="fixed"></amp-img>
+          <amp-img src="images/icons/instagram.png" width="32" height="32" alt="Instagram" layout="fixed"></amp-img>
         </a>
       </div>
     </footer>
