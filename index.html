@@ -48,6 +48,38 @@
         letter-spacing: 1px;
       }
 
+      .announcement {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .announcement amp-img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .scroll-text {
+        white-space: nowrap;
+        display: inline-block;
+        animation: scroll-left 15s linear infinite;
+        font-size: 14px;
+      }
+
+      @keyframes scroll-left {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
       .content {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -93,6 +125,12 @@
     <header>
       <h1>Casino Sponsorları</h1>
     </header>
+
+    <!-- Kayan yazı ve diafon ikonu -->
+    <div class="announcement">
+      <amp-img src="images/icons/speaker.png" width="24" height="24" layout="fixed" alt="Duyuru"></amp-img>
+      <div class="scroll-text">ZeussReis sponsorluğunda güvenilir ve lisanslı bahis keyfi yaşayın</div>
+    </div>
 
     <div class="content">
       <div class="card">
