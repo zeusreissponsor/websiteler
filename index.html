@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html ⚡ lang="tr">
   <head>
@@ -80,8 +79,12 @@
       }
 
       @keyframes scroll-left {
-        0% { transform: translateX(100%); }
-        100% { transform: translateX(-100%); }
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
       }
 
       .content {
@@ -99,10 +102,17 @@
       }
 
       .card amp-img {
+        width: 300px;
+        height: 150px;
         border-radius: 8px;
-        max-width: 100%;
-        height: auto;
         margin: 0 auto;
+      }
+
+      @media (max-width: 600px) {
+        .card amp-img {
+          width: 150px;
+          height: 75px;
+        }
       }
 
       .card p {
@@ -127,18 +137,6 @@
         color: #f1c40f;
         transform: scale(1.2);
       }
-
-      footer .social-icons i {
-        transition: transform 0.3s ease;
-      }
-
-      /* Mobilde görselleri küçült */
-      @media (max-width: 600px) {
-        .card amp-img {
-          width: 180px;
-          height: 90px;
-        }
-      }
     </style>
   </head>
   <body>
@@ -154,34 +152,55 @@
     </div>
 
     <div class="content">
+      <!-- 1. Sponsor: SlotKing -->
       <div class="card">
         <a href="https://t2m.io/zeussreis" target="_blank">
-          <amp-img src="images/sponsor/logo isimsiz.png" width="300" height="150" layout="intrinsic" alt="SlotKing"></amp-img>
+          <amp-img src="images/sponsor/logo isimsiz.png" width="300" height="150" layout="fixed" alt="SlotKing"></amp-img>
         </a>
         <p>SlotKing - Yüksek Oranlı Bonuslar</p>
       </div>
+
+      <!-- 2. Sponsor: PashaGaming -->
       <div class="card">
         <a href="https://eticaretbayimiz.com/links/?btag=1785752_l358973-eticaret=zeuss%7Cticaret=reis" target="_blank">
-          <amp-img src="images/sponsor/logo (1).png" width="300" height="150" layout="intrinsic" alt="PashaGaming"></amp-img>
+          <amp-img src="images/sponsor/logo (1).png" width="300" height="150" layout="fixed" alt="PashaGaming"></amp-img>
         </a>
         <p>PashaGaming - Geniş Oyun Yelpazesi</p>
       </div>
+
+      <!-- 3. Sponsor -->
       <div class="card">
-        <amp-img src="images/sponsor3.png" width="300" height="150" layout="intrinsic" alt="Sponsor C"></amp-img>
+        <amp-img src="images/sponsor2.png" width="300" height="150" layout="fixed" alt="Sponsor B"></amp-img>
+        <p>Sponsor B - %50 Çevrimsiz Bonus</p>
+      </div>
+
+      <!-- 4. Sponsor -->
+      <div class="card">
+        <amp-img src="images/sponsor3.png" width="300" height="150" layout="fixed" alt="Sponsor C"></amp-img>
         <p>Sponsor C - Ücretsiz Deneme</p>
       </div>
+
+      <!-- 5. Sponsor -->
       <div class="card">
-        <amp-img src="images/sponsor4.png" width="300" height="150" layout="intrinsic" alt="Sponsor D"></amp-img>
+        <amp-img src="images/sponsor4.png" width="300" height="150" layout="fixed" alt="Sponsor D"></amp-img>
         <p>Sponsor D - Para İadesi</p>
       </div>
     </div>
 
     <footer>
       <div class="social-icons">
-        <a href="https://t.me/zeussreis" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-        <a href="https://x.com/zeussreiss?t=iFpnqAaKZWl710EW8dbn2Q&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://youtube.com/@zeussreis?si=68Yed9C9c6Hejf1L" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.instagram.com/zeusreiiss?igsh=MXN2cTM2MG1ramQ4bw==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://t.me/zeussreis" target="_blank">
+          <i class="fab fa-telegram-plane"></i>
+        </a>
+        <a href="https://x.com/zeussreiss?t=iFpnqAaKZWl710EW8dbn2Q&s=09" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://youtube.com/@zeussreis?si=68Yed9C9c6Hejf1L" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/zeusreiiss?igsh=MXN2cTM2MG1ramQ4bw==" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
     </footer>
   </body>
