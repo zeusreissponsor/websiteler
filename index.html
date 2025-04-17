@@ -95,6 +95,22 @@
         border-radius: 12px;
         padding: 10px;
         text-align: center;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.8s ease forwards;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+      }
+
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
 
       .card amp-img {
@@ -128,7 +144,7 @@
         transform: scale(1.2);
       }
 
-      /* Mobilde sponsor logolarını 2 seviye küçült (yaklaşık %40) */
+      /* Mobilde sponsor logolarını küçült (%40 kadar) */
       @media only screen and (max-width: 600px) {
         .card amp-img {
           max-width: 160px;
