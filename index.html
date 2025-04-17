@@ -51,19 +51,16 @@
       }
 
       .content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
         padding: 20px;
       }
 
       .card {
-        width: 100%;
-        max-width: 300px;
         background: rgba(0,0,0,0.6);
         border-radius: 12px;
-        padding: 15px;
+        padding: 10px;
         text-align: center;
       }
 
@@ -74,19 +71,23 @@
 
       .card p {
         margin-top: 10px;
-        font-size: 14px;
+        font-size: 13px;
         color: #fff;
       }
 
-      @media (min-width: 600px) {
-        .card {
-          width: 47%;
+      @media (max-width: 768px) {
+        .content {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .card p {
+          font-size: 12px;
         }
       }
 
-      @media (min-width: 900px) {
-        .card {
-          width: 22%;
+      @media (max-width: 480px) {
+        .content {
+          grid-template-columns: repeat(2, 1fr);
         }
       }
 
