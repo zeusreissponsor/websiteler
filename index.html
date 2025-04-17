@@ -9,8 +9,6 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- FontAwesome CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     <style amp-boilerplate>
@@ -26,9 +24,7 @@
     <noscript><style amp-boilerplate>body{animation:none}</style></noscript>
 
     <style amp-custom>
-      * {
-        box-sizing: border-box;
-      }
+      * { box-sizing: border-box; }
 
       body {
         margin: 0;
@@ -51,9 +47,7 @@
         letter-spacing: 1px;
       }
 
-      .spacer {
-        height: 30px;
-      }
+      .spacer { height: 30px; }
 
       .announcement {
         display: flex;
@@ -63,7 +57,6 @@
         background: rgba(0, 0, 0, 0.5);
         padding: 10px;
         overflow: hidden;
-        position: relative;
       }
 
       .announcement amp-img {
@@ -95,8 +88,6 @@
         border-radius: 12px;
         padding: 10px;
         text-align: center;
-        opacity: 0;
-        transform: translateY(20px);
         animation: fadeInUp 0.8s ease forwards;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
@@ -119,6 +110,13 @@
         max-width: 300px;
         height: auto;
         margin: 0 auto;
+        animation: pulse 2.5s infinite ease-in-out;
+      }
+
+      @keyframes pulse {
+        0%   { opacity: 1; transform: scale(1); }
+        50%  { opacity: 0.6; transform: scale(1.03); }
+        100% { opacity: 1; transform: scale(1); }
       }
 
       .card p {
@@ -144,7 +142,6 @@
         transform: scale(1.2);
       }
 
-      /* Mobilde sponsor logolarını küçült (%40 kadar) */
       @media only screen and (max-width: 600px) {
         .card amp-img {
           max-width: 160px;
