@@ -51,36 +51,30 @@
         letter-spacing: 1px;
       }
 
-      amp-carousel {
-        margin: 20px auto;
+      .carousel-container {
+        margin: 20px;
+      }
+
+      amp-carousel.ad-cards {
         max-width: 100%;
       }
 
-      .slide {
+      .ad-card {
+        background: rgba(0,0,0,0.6);
+        border-radius: 12px;
         padding: 10px;
-        background: rgba(0, 0, 0, 0.5);
         text-align: center;
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 160px;
+        margin: 5px;
       }
 
-      .slide h2 {
-        font-size: 24px;
-        font-weight: 400;
-        margin: 0;
-      }
-
-      .slide a {
-        display: block;
-        width: 100%;
-        height: 100%;
-      }
-
-      .slide amp-img {
+      .ad-card amp-img {
         border-radius: 8px;
-        object-fit: cover;
+      }
+
+      .ad-card p {
+        margin-top: 8px;
+        font-size: 14px;
       }
 
       .content {
@@ -135,25 +129,33 @@
       <h1>Casino Sponsorları</h1>
     </header>
 
-    <!-- Otomatik kayan slider -->
-    <amp-carousel width="400" height="520" layout="responsive" type="slides" autoplay delay="3000" loop>
-      <div class="slide"><h2>Promosyon 1</h2></div>
-      <div class="slide"><h2>Promosyon 2</h2></div>
-      <div class="slide"><h2>Promosyon 3</h2></div>
-      <div class="slide">
-        <a href="https://t2m.io/zeussreis" target="_blank">
-          <amp-img 
-            src="images/slider/300hg.jpg" 
-            width="1000" 
-            height="1300" 
-            layout="responsive" 
-            alt="Zeus's Reis">
-          </amp-img>
-        </a>
-      </div>
-    </amp-carousel>
+    <!-- Kayan sponsor reklamları -->
+    <div class="carousel-container">
+      <amp-carousel class="ad-cards" height="200" layout="fixed-height" type="carousel" autoplay delay="3000" loop>
+        <div class="ad-card">
+          <amp-img src="images/sponsor1.png" width="160" height="100" layout="responsive"></amp-img>
+          <p>Sponsor A</p>
+        </div>
+        <div class="ad-card">
+          <amp-img src="images/sponsor2.png" width="160" height="100" layout="responsive"></amp-img>
+          <p>Sponsor B</p>
+        </div>
+        <div class="ad-card">
+          <amp-img src="images/sponsor3.png" width="160" height="100" layout="responsive"></amp-img>
+          <p>Sponsor C</p>
+        </div>
+        <div class="ad-card">
+          <amp-img src="images/sponsor4.png" width="160" height="100" layout="responsive"></amp-img>
+          <p>Sponsor D</p>
+        </div>
+        <div class="ad-card">
+          <amp-img src="images/slider/300hg.jpg" width="160" height="100" layout="responsive"></amp-img>
+          <p><a href="https://t2m.io/zeussreis" target="_blank" style="color:#FFD700;">Zeus's Reis</a></p>
+        </div>
+      </amp-carousel>
+    </div>
 
-    <!-- Sponsor kartları -->
+    <!-- Sabit içerik kartları -->
     <div class="content">
       <div class="card">
         <amp-img src="images/sponsor1.png" width="200" height="100" layout="responsive"></amp-img>
@@ -173,7 +175,7 @@
       </div>
     </div>
 
-    <!-- Footer ve sosyal ikonlar -->
+    <!-- Footer sosyal medya -->
     <footer>
       <div class="social-icons">
         <a href="https://t.me/senin-kanalin" target="_blank">
