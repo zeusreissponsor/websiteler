@@ -60,12 +60,27 @@
         padding: 10px;
         background: rgba(0, 0, 0, 0.5);
         text-align: center;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       .slide h2 {
         font-size: 24px;
         font-weight: 400;
         margin: 0;
+      }
+
+      .slide a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      .slide amp-img {
+        border-radius: 8px;
+        object-fit: cover;
       }
 
       .content {
@@ -120,14 +135,16 @@
       <h1>Casino Sponsorları</h1>
     </header>
 
-    <!-- Otomatik kayan slider + özel görsel linkli -->
+    <!-- Otomatik kayan slider -->
     <amp-carousel width="400" height="200" layout="responsive" type="slides" autoplay delay="3000" loop>
       <div class="slide"><h2>Promosyon 1</h2></div>
       <div class="slide"><h2>Promosyon 2</h2></div>
       <div class="slide"><h2>Promosyon 3</h2></div>
-      <a href="https://t2m.io/zeussreis" target="_blank">
-        <amp-img src="images/slider/300hg.jpg" width="400" height="200" layout="responsive" alt="Zeus's Reis"></amp-img>
-      </a>
+      <div class="slide">
+        <a href="https://t2m.io/zeussreis" target="_blank">
+          <amp-img src="images/slider/300hg.jpg" width="400" height="200" layout="responsive" alt="Zeus's Reis"></amp-img>
+        </a>
+      </div>
     </amp-carousel>
 
     <!-- Sponsor kartları -->
