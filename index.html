@@ -6,11 +6,11 @@
     <link rel="canonical" href="self.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
-    <!-- AMP Scripts -->
+    <!-- AMP -->
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
 
-    <!-- Google Font - Cinzel Decorative -->
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
 
     <style amp-boilerplate>
@@ -60,7 +60,7 @@
         padding: 10px;
         background: rgba(0, 0, 0, 0.5);
         text-align: center;
-        height: 200px;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -136,13 +136,19 @@
     </header>
 
     <!-- Otomatik kayan slider -->
-    <amp-carousel width="400" height="200" layout="responsive" type="slides" autoplay delay="3000" loop>
+    <amp-carousel width="400" height="520" layout="responsive" type="slides" autoplay delay="3000" loop>
       <div class="slide"><h2>Promosyon 1</h2></div>
       <div class="slide"><h2>Promosyon 2</h2></div>
       <div class="slide"><h2>Promosyon 3</h2></div>
       <div class="slide">
         <a href="https://t2m.io/zeussreis" target="_blank">
-          <amp-img src="images/slider/300hg.jpg" width="400" height="200" layout="responsive" alt="Zeus's Reis"></amp-img>
+          <amp-img 
+            src="images/slider/300hg.jpg" 
+            width="1000" 
+            height="1300" 
+            layout="responsive" 
+            alt="Zeus's Reis">
+          </amp-img>
         </a>
       </div>
     </amp-carousel>
